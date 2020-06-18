@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/ServiceFabricTestApp" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="QueueSupervisor_InstanceCount" Value="1" />
+    <Parameter Name="MessageProcessorActorService_PartitionCount" Value="1" />
+    <Parameter Name="MessageProcessorActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="MessageProcessorActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="EmailProcessorActorService_PartitionCount" Value="1" />
+    <Parameter Name="EmailProcessorActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="EmailProcessorActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="PushProcessorActorService_PartitionCount" Value="1" />
+    <Parameter Name="PushProcessorActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="PushProcessorActorService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="SMSProcessorActorService_PartitionCount" Value="1" />
+    <Parameter Name="SMSProcessorActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="SMSProcessorActorService_MinReplicaSetSize" Value="1" />
+  </Parameters>
+</Application>

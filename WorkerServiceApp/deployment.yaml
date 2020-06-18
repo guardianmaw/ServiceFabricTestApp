@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workerserviceapp-deployment
+  labels:
+    app: workerserviceapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workerserviceapp
+  template:
+    metadata:
+      labels:
+        app: workerserviceapp
+    spec:
+      containers:
+      - name: workerserviceapp
+        image: michealwheeler.azurecr.io/workerserviceapp:latest
+        ports:
+        - containerPort: 80
